@@ -2,16 +2,19 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<title>top</title>
+	<title>test</title>
 </head>
 <body>
+<form name="goto">
+	行き先：<input type="text" name="txtb" value=""><input type="button" value="JUMP" onclick="jump();">
 	<script type="text/javascript">
-		var pw;
+		function jump{
+			var go = document.goto.txtb.value;
+			location.href = go;
+		}
 
-		pw = prompt("行き先を入力して下さい。","");
 
-		if (pw != "")
-  			location.href = pw+".html";
 	</script>
+</form>
 </body>
 </html>
