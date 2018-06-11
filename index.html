@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="style.css" type="text/css">
 	<title>top</title>
 </head>
+<script type="text/javascript">
+	function jump(){
+		var pw;
+
+		pw = prompt("行き先を入力して下さい。","");
+
+		if (pw != "")
+  			location.href = pw+".html";
+	}
+</script>
 <body>
-	<h1>暇つぶしに色々します</h1>
+	<div id="wrapper">
+		<h1 class="blue">暇つぶしに色々します</h1>
+		
+		<div class="green">
+			<h4 class="left">OneDrive</h4>
+			<a href="https://1drv.ms/f/s!Am6rPWPloPm2grYOIHU2E8nfkZjLmA">Minecraft</a><br>
+			<a href="https://1drv.ms/f/s!Am6rPWPloPm2gtFhREP5NJJKsDn07g">その他共有</a><br>
+			<br>
+		</div>
+
+		<div class="pink">
+			<h4 class="left">デバッグ用？</h4>
+			<input type="button" value="JUMP" onclick="jump();"><br><br>
+		</div>
+
+	</div>
 </body>
 </html>
