@@ -15,15 +15,20 @@ div#wrapper {
 pre.prog{
   text-align: left;
   color: #000;
-  background-color: #c0c0c0
+  background-color: #dfdfdf
 
 }
 
 h4.left{
   text-align: left;
-  background-color: #fff0f5
+  background-color: #f9ffff
 }
 
 h1.blue{
   color: #819FF7;
+}
+
+div.lightblue{
+  color: #000;
+  background-color: #E0F2F7
 }
