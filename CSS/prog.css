@@ -1,0 +1,29 @@
+#h1 {color:#2382A1}
+#white {color:#FFF;}
+a:link{color:#000;}
+a:visited{color:#000;}
+a:hover{color:#FF00FF;}
+a:active{color:#FFFF00;}
+
+div#wrapper {  
+    width: 1000px;  
+    margin: 0 auto;  
+    text-align: center;  
+    /*border: 1px solid #FF0000;*/  
+}  
+
+pre.prog{
+  text-align: left;
+  color: #000;
+  background-color: #c0c0c0
+
+}
+
+h4.left{
+  text-align: left;
+  background-color: #fff0f5
+}
+
+h1.blue{
+  color: #819FF7;
+}
