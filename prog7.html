@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>ptogram</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			
+			<pre class="prog"><h4 class="left">529 課題1</h4>
+import java.util.Scanner;
+
+public class Kadai1180529 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int N = 0;
+		
+		System.out.println("数値入力：");
+		N = scan.nextInt();
+		
+		if(N&lt;10) {
+			System.out.println("入力され"+N+"は10未満の整数です。");
+		}else {
+			System.out.println("入力された"+N+"は10以上の整数です。");
+		}
+		
+		scan.close();
+
+	}
+
+}
+
+			</pre>
+			
+			<pre class="prog"><h4 class="left">529 課題2</h4>
+import java.util.Scanner;
+
+public class Kadai2180529 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int N = 0;
+		double sum = 0;
+		
+		System.out.println("人数入力：");
+		N = scan.nextInt();
+		
+		if(5<=N) {
+			sum = 850 * N * 0.7;
+			System.out.println("入館料は850×"+N+"人x0.7="+sum+"円です。");
+		}else {
+			sum = 850 * N;
+			System.out.println("入館料は850×"+N+"人="+sum+"円です。");
+		}
+		
+		scan.nextInt();
+
+	}
+
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">529 課題3</h4>
+import java.util.Scanner;
+
+public class Kadai3180529 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int N = 0;
+		
+		System.out.println("点数入力：");
+		N = scan.nextInt();
+		
+		if(N&lt;60) {
+			System.out.println(N+"点は不合格です。");
+		}else {
+			System.out.println(N+"点は合格です。");
+		}
+		
+		scan.close();
+
+	}
+
+}
+
+			</pre>
+
+			
+			<pre class="prog"><h4 class="left">529 課題4</h4>
+//６０未満ではなく、６０以上で判定する
+
+import java.util.Scanner;
+
+public class Kadai4180529 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int N = 0;
+		
+		System.out.println("点数入力：");
+		N = scan.nextInt();
+		
+		if(N>=60) {
+			System.out.println(N+"点は合格です。");
+		}else {
+			System.out.println(N+"点は不合格です。");
+		}
+		
+		scan.close();
+
+	}
+
+}
+			</pre>
+	</div>
+</body>
+</html>
