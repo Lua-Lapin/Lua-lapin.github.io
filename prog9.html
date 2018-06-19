@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>ptogram</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			
+			<pre class="prog"><h4 class="left">619 課題1</h4>
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int N =0;
+
+		System.out.println("回数入力：");
+		N = scan.nextInt();
+
+		for(int i=0; i&lt;N; i++){
+			System.out.println("阪神タイガース勝利！");
+		}
+
+		scan.close();
+
+	}
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">619 課題2</h4>
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int N =0;
+
+		System.out.println("回数入力：");
+		N = scan.nextInt();
+
+		for(int i=0; i&lt;N; i++){
+			System.out.println("□■ □■ □■ □■ □■ ");
+			System.out.println("■ □■ □■ □■ □■□  ");
+		}
+
+		scan.close();
+
+	}
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">619 課題3</h4>
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int N =0;
+
+		System.out.println("回数入力：");
+		N = scan.nextInt();
+
+		for(int i=1; i&lt;=N; i++){
+			System.out.println(i+" :なでしこJAPAN勝利! ");
+		}
+
+		scan.close();
+
+	}
+}
+			</pre>
+
+			<pre class="prog"><h4 class="left">619 課題4</h4>
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int N =0;
+		int M =0;
+
+		System.out.println("nを入力：");
+		N = scan.nextInt();
+
+
+
+		for(int i=1; i&lt;=N; i++){
+			System.out.print(i+":");
+			M=i-((i/10)*10);
+			if(i%4==0){
+				System.out.println("内田！");
+			}else if(M==3){
+				System.out.println("内田！");
+			}else if(i==30){
+				System.out.println("内田！");
+			}else{
+				System.out.println("");
+			}
+		}
+
+		scan.close();
+
+	}
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">619 課題5</h4>
+package kadai619;
+
+import java.util.Scanner;
+
+public class Kadai5180619 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int N=0;
+		int M=0;
+		int Y=0;
+		int Z=0;
+		
+		for(int i=1; i&lt;10; i++) {
+			Y+=N;
+			Z+=M;
+			System.out.println(i+"回表　巨人の得点：");
+			N = scan.nextInt();
+			System.out.println(i+"回裏　阪神の得点：");
+			M = scan.nextInt();
+		}
+		
+		System.out.print("巨人："+Y+"点,阪神："+Z+"点");
+		if(Y&lt;Z) {
+			System.out.println("巨人の勝ち");
+		}else if(Z==Y){
+			System.out.println("引き分け");
+		}else {
+			System.out.println("阪神の勝ち");
+		}
+		
+		scan.close();
+
+	}
+
+}
+
+			</pre>
+	</div>
+</body>
+</html>
