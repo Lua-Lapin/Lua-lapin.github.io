@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- &lt; -->
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>program</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			<pre class="prog"><h4 class="left">703 自習課題1</h4>
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner stdIn=new Scanner(System.in);
+
+        int  n;
+        for (;;){
+        	n = stdIn.nextInt() ;
+        	if (n==0){  
+        		break;
+        	}   
+        System.out.println("uchida");
+	} 
+        stdIn.close();
+    }
+}
+			</pre>
+			<pre class="prog"><h4 class="left">703 自習課題2</h4>
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner stdIn=new Scanner(System.in);
+
+        int sum = 0, i; 
+        
+        for (i = 1; ; i++){  
+        	sum += i; 
+        	if (sum > 100){    
+        		break;   
+        	}
+        	System.out.println("sum = " + sum);
+        } 
+        System.out.println("sum = " + sum);
+        stdIn.close();
+    }
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">703 自習課題3</h4>
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner stdIn=new Scanner(System.in);
+
+        int i; 
+        for (i=1; i&lt;=100; i++){  
+        	if (i%3==0){
+        		continue;  
+        	} 
+        System.out.println("i="+i); 
+        } 
+        stdIn.close();
+    }
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">703 自習課題4</h4>
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scan=new Scanner(System.in);
+
+        int N =0;
+        double total=0;
+        int totali=0;
+        double ave =0;
+        int data =0;
+        int notdata =0;
+
+        while(total&lt;100){
+        	N = scan.nextInt();
+        	if(N>=0){
+        		totali += N;
+        		total += N;
+        		data++;
+        	}else{
+        		notdata++;
+        	}
+
+        }
+        ave = total/data;
+        System.out.println("DataNum="+data);
+        System.out.println("InvalidDataNum="+notdata);
+        System.out.println("Total="+totali);
+        System.out.printf("Average="+"%.1f",ave);
+        scan.close();
+    }
+}
+			</pre>
+
+			
+	</div>
+</body>
+</html>
