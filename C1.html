@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- &lt; -->
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>C言語</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			<pre class="prog"><h4 class="left">1</h4>
+#include &lt;stdio.h>
+
+int main(void){
+	int N=0;
+
+	printf("あなたは何歳ですか？\n");
+
+	fflush(stdout);
+	scanf("%d",&N);
+
+	printf("あなたは%d歳です。\n",N);
+
+	return 0;
+}
+			</pre>
+
+			<pre class="prog"><h4 class="left">2</h4>
+#include &lt;stdio.h>
+
+int main(void){
+	double N;
+
+	printf("円周率の値はいくつですか？\n");
+
+	fflush(stdout);
+	scanf("%lf",&N);
+
+	printf("円周率の値は%fです。\n",N);
+
+	return 0;
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">3</h4>
+#include &lt;stdio.h>
+
+int main(void){
+	char N;
+
+	printf("アルファベットの最初の文字は何ですか？\n");
+
+	fflush(stdout);
+	N = getchar();
+
+	printf("アルファベットの最初の文字は%cです。\n",N);
+
+	return 0;
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">4</h4>
+#include &lt;stdio.h>
+
+int main(void){
+	double N;
+	double M;
+
+	printf("身長を入力してください。\n");
+
+	fflush(stdout);
+	scanf("%lf",&N);
+
+	printf("体重を入力してください。\n");
+
+	fflush(stdout);
+	scanf("%lf",&M);
+
+	printf("身長は%fセンチです。\n",N);
+	printf("体重は%fキロです。\n",M);
+
+	return 0;
+}
+			</pre>
+
+			<pre class="prog"><h4 class="left">5</h4>
+#include &lt;stdio.h>
+
+int main(void){
+	double N;
+	double M;
+
+	printf("身長を入力してください。\n");
+
+	fflush(stdout);
+	scanf("%lf",&N);
+
+	printf("体重を入力してください。\n");
+
+	fflush(stdout);
+	scanf("%lf",&M);
+
+	printf("身長は%fセンチ：",N);
+	printf("体重は%fキロです。\n",M);
+
+	return 0;
+}
+			</pre>
+
+			
+	</div>
+</body>
+</html>
