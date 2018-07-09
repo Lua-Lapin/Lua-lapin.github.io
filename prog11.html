@@ -1,0 +1,73 @@
+<!DOCTYPE html><!-- &lt; -->
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>program</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			
+			<pre class="prog"><h4 class="left">703 課題1</h4>
+public class Main {
+
+	public static void main(String[] args) {
+
+		for(int i=1; i&lt;10; i++){
+			if(i==3 || i==5){
+				continue;
+			}
+			for(int j=1; j&lt;10; j++){
+				if((i*j)/10==0){
+					System.out.print("  "+i*j);
+				}else{
+					System.out.print(" "+i*j);
+				}
+			}
+		System.out.println();
+		}
+
+	}
+
+}
+			</pre>
+			
+			<pre class="prog"><h4 class="left">703 課題2</h4>
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+    	Scanner scan=new Scanner(System.in);
+    	Random rnd= new Random();
+
+    	int N =rnd.nextInt(99)+1;
+    	int M =0;
+
+    	for(int i=0;i&lt;10;i++){
+	    	System.out.println("1～100の数値を入力：");
+	    	M=scan.nextInt();
+
+	    	if(M&lt;N){
+	    		System.out.println(M+"より大きい値です");
+	    	}else if(M>N){
+	    		System.out.println(M+"より小さい値です ");
+	    	}else{
+	    		System.out.println("おめでとう。"+i+"回で当たりました。");
+	    		break;
+	    	}
+	    	if(i==9){
+	    		System.out.println("残念 です。10回推理しても当たりませんでした");
+	    	}
+    	}
+    	scan.close();
+    }
+}
+			</pre>
+			
+
+	</div>
+</body>
+</html>
