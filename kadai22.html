@@ -9,43 +9,43 @@
 	<div id="wrapper">
 		<a href="list.html">目次へ</a>
 			
-			<pre class="prog"><h4 class="left">703 自習課題1</h4>
-                import java.util.Scanner;
+			<pre class="prog"><h4 class="left">2202 自習課題1</h4>
+import java.util.Scanner;
 
-                public class kadai2202 {
-                
-                    public static void main(String[] args) {
-                        Scanner scan=new Scanner(System.in);
-                        int n=scan.nextInt();
-                        int array[]=new int[n];
-                        for(int i=0;i&lt;n;i++) {
-                            array[i]=scan.nextInt();
-                        }
-                
-                        boolean c=false;
-                        while(true) {
-                            int a=0;
-                            int b=0;
-                            for(int j=0;j-1&lt;n;j++) {
-                                a=array[j];
-                                b=array[j+1];
-                                if(a&lt;b) {
-                                    array[j]=b;
-                                    array[j+1]=a;
-                                }else if(b&lt;a && j==j-2) {
-                                    c=true;
-                                }
-                            }
-                            if(c) {
-                                break;
-                            }
-                        }
-                        for(int i=0;i&lt;n;i++) {
-                            System.out.println(array[i]);
-                        }
-                    }
-                
-                }
+public class sort {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		Scanner scan=new Scanner(System.in);
+		System.out.println("配列の長さを指定してください");
+		int n=scan.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i&lt;n;i++) {
+			System.out.print("ARRAY["+i+"]=");
+			a[i]=scan.nextInt();
+		}
+		System.out.println();
+		int b=0;
+		int c=0;
+		for(int i=0;i&lt;n;i++) {
+			for(int j=0;j<n-1;) {
+				b=a[j];
+				c=a[++j];
+				if(b&lt;c) {
+					a[j-1]=c;
+					a[j]=b;
+				}
+			}
+		}
+		for(int i=0;i&lt;n;i++) {
+			System.out.print("ARRAY["+i+"]=");
+			System.out.println(a[i]);
+		}
+
+	}
+
+}
+
                 
 			</pre>
 
