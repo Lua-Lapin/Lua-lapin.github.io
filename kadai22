@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- &lt; -->
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>program</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			<pre class="prog"><h4 class="left">703 自習課題1</h4>
+                import java.util.Scanner;
+
+                public class kadai2202 {
+                
+                    public static void main(String[] args) {
+                        Scanner scan=new Scanner(System.in);
+                        int n=scan.nextInt();
+                        int array[]=new int[n];
+                        for(int i=0;i&lt;n;i++) {
+                            array[i]=scan.nextInt();
+                        }
+                
+                        boolean c=false;
+                        while(true) {
+                            int a=0;
+                            int b=0;
+                            for(int j=0;j-1&lt;n;j++) {
+                                a=array[j];
+                                b=array[j+1];
+                                if(a&lt;b) {
+                                    array[j]=b;
+                                    array[j+1]=a;
+                                }else if(b&lt;a && j==j-2) {
+                                    c=true;
+                                }
+                            }
+                            if(c) {
+                                break;
+                            }
+                        }
+                        for(int i=0;i&lt;n;i++) {
+                            System.out.println(array[i]);
+                        }
+                    }
+                
+                }
+                
+			</pre>
+
+			
+	</div>
+</body>
+</html>
