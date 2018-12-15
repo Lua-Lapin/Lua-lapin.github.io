@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/prog.css" type="text/css">
+<link rel="shortcut icon" href="yukari.ico" type="image/vnd.microsoft.icon">
+	<title>ptogram</title>
+</head>
+<body bgcolor="#f9ffff">
+	<div id="wrapper">
+		<a href="list.html">目次へ</a>
+			
+			
+			<pre class="prog"><h4 class="left">12/14 課題1</h4>
+                import java.util.Random;
+                import java.util.Scanner;
+                
+                public class kadai2301 {
+                
+                    public static void main(String[] args) {
+                        Scanner scan=new Scanner(System.in);
+                        Random rnd = new Random();
+                        String[ ] word ={"sunday","monday","tuesday", "wednesday","thursday","friday","saturday","sunday","monday","tuesday"};
+                        String[ ] Japanese = {"日曜日","月曜日","火曜日", "水曜日","木曜日","金曜日","土曜日","日曜日","月曜日","火曜日"};
+                        int a=0;
+                        int i=0;
+                        int ans=0;
+                        String str="";
+                        while(true) {
+                            a=rnd.nextInt(10);
+                            System.out.println(Japanese[a]+"の英語は？ ");
+                            str=scan.next();
+                            if(word[a].equals(str)) {
+                                System.out.println("正解です");
+                                i++;
+                                ans++;
+                            }else {
+                                System.out.println("不正解です");
+                                i++;
+                            }
+                            System.out.println("続けますか? Yes:1,No:0");
+                            a=scan.nextInt();
+                            if(a==0) {
+                                break;
+                            }
+                        }
+                        System.out.println(i+"問中"+ans+"問正解しました");
+                    }
+                
+                }
+                
+			</pre>
+			
+			<pre class="prog"><h4 class="left">12/14 課題2</h4>
+                import java.util.Scanner;
+
+                public class Main2302 {
+                
+                    public static void main(String[] args) {
+                        Scanner scan=new Scanner(System.in);
+                        String str=scan.next();
+                        int n=str.length();
+                        char ch;
+                        int b=0;
+                        for(int i=0;i&lt;n;i++) {//A=65,a=97,Z=90
+                            ch=str.charAt(i);
+                            b=ch;
+                            if(b&lt;=90) {
+                                b+=32;
+                                ch=(char)b;
+                            }else {
+                                b-=32;
+                                ch=(char)b;
+                            }
+                            System.out.print(ch);
+                        }
+                
+                    }
+                
+                }
+                
+			</pre>
+
+			<pre class="prog"><h4 class="left">12/14 課題3</h4>
+                import java.util.Scanner;
+
+                public class kadai2303 {
+                
+                    public static void main(String[] args) {
+                        // TODO 自動生成されたメソッド・スタブ
+                        Scanner scan=new Scanner(System.in);
+                        String str=scan.next();
+                        int n=0;
+                        int c=0;
+                        int i=0;
+                        String b[]=new String[str.length()];
+                        while(true) {
+                            n=scan.nextInt();
+                            if(str.length()&lt;c+n) {
+                                b[i]=str.substring(c,str.length());
+                                i++;
+                                break;
+                            }else {
+                                b[i]=str.substring(c,c+n);
+                            }
+                            i++;
+                            c+=n;
+                        }
+                        for(int j=0;j&lt;i;j++) {
+                            System.out.println(b[j]);
+                        }
+                
+                    }
+                
+                }
+                
+	</div>
+</body>
+</html>
